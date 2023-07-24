@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <div className=" py-4">
-        <h2>Main Section</h2>
+        <h2>About Section</h2>
     </div>
   </>
   )
