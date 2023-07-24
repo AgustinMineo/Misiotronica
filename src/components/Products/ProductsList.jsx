@@ -1,12 +1,17 @@
 import React from 'react'
-
-function ProductsList({childrenProducts}) {
+import { Products } from './Products'
+function ProductsList(prop) {
   return (
-    <div className='row '>
-      <div className="col-lg-12">
-      {childrenProducts}
-      </div>
-    </div>
+    <>
+      {prop.map(prod => <Products 
+      key={prod.id}
+      productImg={prod.productImg}
+      name={prod.name}
+      stock={prod.stock}
+      price={prod.price}
+      description={prod.description}
+      />)}
+    </>
   )
 }
 
