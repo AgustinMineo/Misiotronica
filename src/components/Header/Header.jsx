@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <div className='w-100 row mt-5'>
-      <div className='col-lg-5'> 
+      <div className='col-lg-4 mx-5'> 
           <NavLink to='/'>
             <img className='mx-5' src={logo} alt="Misiotrónica Logo" width={'100px'} height={'100px'} srcset="" />
           </NavLink>

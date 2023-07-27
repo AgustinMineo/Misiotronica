@@ -1,11 +1,10 @@
 import { React, useState } from 'react';
-import './NavBar.css';
 import { NavLink } from 'react-router-dom';
 function NavBar() {
     const [activeRoute, setActiveRoute] = useState('');
   return (
     <>
-        <nav className='text-center w-100'>
+        <nav className='text-center w-100 sticky-top'>
           <ul className='list-unstyled '>
             {routes.map((route) => (
               <li>
@@ -40,6 +39,6 @@ routes.push({
 });
 routes.push({
     to:'/products',
-    text:'Products',
+    text:'Ventas',
 });
 export {NavBar}

@@ -11,31 +11,31 @@ teamList.push(
     {
       fullName:'Agustin Mineo',
       description:'CEO',
-      img : require('./src/photo1.png')
+      img : require('./src/photo2.png')
 });
 teamList.push(
       {
         fullName:'Agustin Mineo',
         description:'CEO',
-        img : require('./src/photo1.png')
+        img : require('./src/photo3.png')
 });
 teamList.push(
         {
           fullName:'Agustin Mineo',
           description:'CEO',
-          img : require('./src/photo1.png')
+          img : require('./src/photo4.png')
 });
 teamList.push(
           {
             fullName:'Agustin Mineo',
             description:'CEO',
-            img : require('./src/photo1.png')
+            img : require('./src/photo5.png')
 });
 teamList.push(
             {
               fullName:'Agustin Mineo',
               description:'CEO',
-              img : require('./src/photo1.png')
+              img : require('./src/photo6.png')
 });
 
 function About() {
