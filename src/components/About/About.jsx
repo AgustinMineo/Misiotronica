@@ -49,7 +49,8 @@ function About() {
           Desde cables hasta placas, baterías, luces y sensores,
           nuestra tienda online ofrece productos de alta calidad para entusiastas y profesionales.
           Nos apasiona la tecnología y estamos aquí para ayudarte a llevar tus proyectos al siguiente nivel.<br/>
-          <span className='fw-bold'>¡Únete a nuestra comunidad de amantes de la electrónica y descubre un mundo de posibilidades con Misiotrónica!</span>
+          <span className='fw-bold'>¡Únete a nuestra comunidad de amantes de la electrónica y descubre un mundo de posibilidades 
+          con Misiotrónica!</span>
         </p>
         <div className="mt-5">
           <hr/>

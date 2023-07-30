@@ -2,7 +2,7 @@
 import './App.css';
 import {HashRouter, Routes, Route} from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
-import { ProductContainer } from './components/Products/ProductContainer';
+import { ProductContainer } from './components/Venta/ProductContainer';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
 import { NotFound } from './components/NotFound/NotFound';
