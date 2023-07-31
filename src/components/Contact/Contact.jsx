@@ -3,7 +3,7 @@ import React from 'react'
 function Contact() {
   return (
     <div className='mt-5'>
-      <form>
+      <form className='container'>
         <div class="mb-3">
           <label for="emailText" class="form-label">Correo electronico *</label>
           <input type="email" class="form-control"  id="email" aria-describedby="email" required/>

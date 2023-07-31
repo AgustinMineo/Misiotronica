@@ -9,10 +9,10 @@ function Layout() {
         <div className="container-fluid">
             <div className="row mx-0">
                 <Header/>
-                <aside className="col-md-2 col-lg-2">
+                <aside className="col-xl-2 col-lg-12 col-md-12 col-sm-12 z-0 ">
                     <NavBar/>
                 </aside>
-            <main className="col-lg-10">
+            <main className=" col-xl-10 col-lg-12 col-md-12 col-sm-12">
                 <Outlet />
             </main>
             </div>
