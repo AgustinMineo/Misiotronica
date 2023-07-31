@@ -1,43 +1,26 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './teamCard.css';
+import React from 'react';
 
-function TeamCard({ fullName, title, img }) {
-  const [isCardVisible, setCardVisible] = useState(false);
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    const cardElement = cardRef.current;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setCardVisible(true);
-          observer.unobserve(cardElement);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    observer.observe(cardElement);
-
-    return () => {
-      if (observer) {
-        observer.unobserve(cardElement);
-      }
-    };
-  }, []);
+function TeamCard({ fullName, img,description,email }) {
 
   return (
     <>
-      <div className='w-25 mx-5 my-3'>
-        <div ref={cardRef} className={`card team-card-image ${isCardVisible ? 'show' : ''}`} style={{ width: '18rem' }}>
-          <img src={img} className="card-img-top" alt={fullName} />
-          <div className="card-body">
-            <p className="card-text fs-3 fw-lighter">{fullName}</p>
-            <hr />
-            <p className='fw-bold'>{title}</p>
-          </div>
+    <div class="card mb-3" >
+      <div class="row">
+        <div className="col-lg-2">
+          <img src={img} className="img-fluid rounded-start" alt={fullName} style={{ width: '100%', height: '100%' }} />
+        </div>
+        <div className="col-lg-6">
+        <div class="card-body">
+          <h5 class="card-title">{fullName}</h5>
+          
+          <p class="">{description}</p>
+          <p class="card-text">
+            <strong>Contacto : {email}</strong>
+          </p>
+        </div>
         </div>
       </div>
+    </div>
     </>
   );
 }

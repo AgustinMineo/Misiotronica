@@ -1,0 +1,20 @@
+@media (min-width: 0px) and (max-width: 1616px) {
+    .align-styles{
+    }
+    .align-styles-icon{
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .align-styles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    .align-styles-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+}
