@@ -29,7 +29,7 @@ function ProductModal({ productImg, name, stock, price, description, onClose }) 
       }
     });
   };
-  
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content">
@@ -41,7 +41,9 @@ function ProductModal({ productImg, name, stock, price, description, onClose }) 
           <div className="text-center">
             <img src={productImg} alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
           </div>
-          <p className='mx-5'>{description}</p>
+          <div className="text-container">
+            <p className='mx-5'>{description}</p>
+          </div>
           <div className='row'>
             <div className="col-lg-6 align-self-center">
               <p className='d-flex align-items-center justify-content-center border my-2'><span className='fw-bold mx-2'>Stock: </span> {stock}</p>
