@@ -37,7 +37,6 @@ function Home() {
 					<p className="section-description">Nuestro equipo de atención al cliente está disponible para ayudarte con cualquier consulta o problema que puedas tener.</p>
 					<NavLink className="btn btn-primary" to="/about">Nuestro Equipo</NavLink>
 				</div>
-				<hr/>
 		  	</div>
 		</div>
 	);

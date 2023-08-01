@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 0px) and (max-width: 1200px) {
     .nav-container{
         display: flex;
         flex-wrap: wrap;
