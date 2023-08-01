@@ -7,7 +7,7 @@ function TeamCard({ fullName, img,description,email }) {
     <div class="card mb-3" >
       <div class="row">
         <div className="col-lg-2 ">
-          <img src={img} className="img-fluid rounded-start" alt={fullName} style={{ width: '100%', height: '100%' }} />
+          <img src={img} className="img-fluid rounded-start d-block" alt={fullName} style={{ width: '100%', height: '100%' }} />
         </div>
         <div className="col-lg-6">
         <div class="card-body">
