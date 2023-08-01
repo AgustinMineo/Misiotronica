@@ -14,7 +14,7 @@ function Footer() {
             <h2>Redes Sociales</h2>
             <ul className="m-0 p-0 list-unstyled text-decoration-none">
                 <li><a className="text-dark text-decoration-none" href='https://www.whatsapp.com/'><FaWhatsapp/> WhatsApp</a></li>
-                <li><a className="text-dark text-decoration-none" href='https://www.whatsapp.com/'><FaLinkedin/> Linkedin</a></li>
+                <li><a className="text-dark text-decoration-none" href='https://www.linkedin.com/'><FaLinkedin/> Linkedin</a></li>
                 <li><a className="text-dark text-decoration-none" href='https://www.facebook.com/'><FaFacebook/> Facebook</a></li>
                 <li><a className="text-dark text-decoration-none" href='https://www.twitter.com/'><FaTwitter/> Twitter</a></li>
                 <li><a className="text-dark text-decoration-none" href='https://www.instagram.com/'><FaInstagram/> Instagram</a></li>
