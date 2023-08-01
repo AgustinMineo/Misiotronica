@@ -15,7 +15,7 @@ function NavBar() {
                   <NavLink
                       to={route.to}
                       end
-                      className="nav-link link-dark my-5"
+                      className="nav-link link-dark navStyle"
                       aria-current="page"
                       onClick={() => setActiveRoute(route.to)}
                       >

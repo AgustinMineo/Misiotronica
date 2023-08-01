@@ -2,7 +2,34 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductModal.css';
 import { MdAddShoppingCart } from "react-icons/md";
+import Swal from 'sweetalert2';
 function ProductModal({ productImg, name, stock, price, description, onClose }) {
+  const handleAddToCart = () => {
+    Swal.fire({
+      title: 'Añadir al carrito',
+      text: `¿Deseas agregar "${name}" al carrito?`,
+      imageUrl: `${productImg}`,
+      imageAlt:`Imagen del producto ${productImg}`,
+      imageHeight:300,
+      imageWidth:300,
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: '¡Agregado!',
+          text: `"${name}" ha sido agregado al carrito correctamente.`,
+          icon: 'success',
+          confirmButtonColor: '#3085d6',
+          confirmButtonText: 'Aceptar'
+        });
+      }
+    });
+  };
+  
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content">
@@ -25,7 +52,7 @@ function ProductModal({ productImg, name, stock, price, description, onClose }) 
           </div>
         </div>
         <div className="modal-footer d-flex justify-content-center align-items-center">
-          <button className="btn mb-3 details border" onClick={() => alert('Añadir al carrito')}>
+          <button className="btn mb-3 details border" onClick={handleAddToCart}>
           <MdAddShoppingCart/> Añadir al carrito
           </button>
         </div>
