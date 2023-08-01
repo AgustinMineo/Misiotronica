@@ -6,7 +6,7 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaWhatsapp, FaTelegram 
 function Footer() {
   return (
     <>
-    <div className="pb-5 footer">
+    <div className="pb-5 footer mt-4">
       <div className="container">
         <div className="row">
           <hr/>

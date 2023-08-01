@@ -11,7 +11,9 @@ function ProductModal({ productImg, name, stock, price, description, onClose }) 
           <button className="btn-close" onClick={onClose}></button>
         </div>
         <div className="modal-body">
-          <img src={productImg} alt={'Imagen del producto ' + name} width={'300px'} height={'auto'} />
+          <div className="text-center">
+            <img src={productImg} alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
+          </div>
           <p className='mx-5'>{description}</p>
           <div className='row'>
             <div className="col-lg-6 align-self-center">
