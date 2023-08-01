@@ -1,0 +1,38 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .align-styles{
+       
+    }
+    .align-styles-icon{
+       
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .align-styles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .align-styles-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .align-styles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .align-styles-icon {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    div>.mx-5{
+        margin: 0 !important;
+      }
+}

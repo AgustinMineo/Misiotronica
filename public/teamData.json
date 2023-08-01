@@ -1,0 +1,81 @@
+{
+  "Dueño":[ 
+    {
+    "id": 1,
+    "nombre": "Alejandro",
+    "apellido": "García Martínez",
+    "email": "garcia.martinez@misotronica.com",
+    "imagen": "https://images.generated.photos/b4q0n60xTWRKcNLKcfDpnp9u9h_BFb_v_s7tdPUIzww/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wOTk1/MTQwLmpwZw.jpg",
+    "fullName": "Alejandro García Martínez",
+    "description": "Alejandro es el fundador y dueño de la Misotrónica. Con una pasión inquebrantable por la tecnología y los negocios, ha convertido su visión en realidad al establecer esta tienda en línea líder en el mercado. Es un líder inspirador que guía al equipo con su experiencia y visión estratégica. Siempre está atento a las últimas tendencias del mercado y se asegura de que la tienda ofrezca los productos más innovadores y de alta calidad a los clientes."
+  }
+],
+  "Atencion Al Cliente": [
+    {
+      "id": 2,
+      "nombre": "Laura",
+      "apellido": "Rodríguez López",
+      "email": "laura.rodriguez@misotronica.com",
+      "imagen": "https://images.generated.photos/esRKPElJiI1zQVqcDFiwWXo2gqAkj1IDrXZxCzkgDDY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wNDkw/MDY0LmpwZw.jpg",
+      "fullName": "Laura Rodríguez López",
+      "description": "Laura es una persona amable y atenta que tiene una pasión por brindar un servicio excepcional al cliente. Con una excelente capacidad de comunicación, está siempre dispuesta a escuchar las inquietudes de los clientes y proporcionar soluciones efectivas. Su enfoque centrado en el cliente y su conocimiento profundo de los productos de la tienda hacen que los clientes se sientan valorados y satisfechos en cada interacción."
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "apellido": "Gómez Morales",
+      "email": "gomez.morales@misotronica.com",
+      "imagen": "https://images.generated.photos/qTVVH6z-AibFofjpryUOfB_uctZuGBN4Y8LQBbeCrnE/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wNTUy/OTI2LmpwZw.jpg",
+      "fullName": "Carlos Gómez Morales",
+      "description": "Carlos es un profesional con habilidades excepcionales de resolución de problemas y empatía. Siempre está dispuesto a ayudar a los clientes a resolver cualquier duda o inconveniente que puedan tener. Con una actitud positiva y amigable, hace que cada interacción sea una experiencia agradable para los clientes. Su compromiso con la satisfacción del cliente es insuperable."
+    }
+  ],
+  "Vendedores": [
+    {
+      "id": 4,
+      "nombre": "María",
+      "apellido": "Fernández Ramírez",
+      "email": "fernandez.ramirez@misotronica.com",
+      "imagen": "https://images.generated.photos/N9yBwVs4ztwDAs2TYF5sS1GzRKySdarY56K6IzxW1lI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wNDk0/NzM3LmpwZw.jpg",
+      "fullName": "María Fernández Ramírez",
+      "description": "María es una vendedora entusiasta y proactiva. Su pasión por la tecnología y su amplio conocimiento de los productos de la tienda le permiten asesorar a los clientes de manera efectiva y personalizada. Siempre está buscando oportunidades para superar las expectativas de los clientes y asegurarse de que encuentren los productos perfectos para sus necesidades."
+    },
+    {
+      "id": 5,
+      "nombre": "Juan",
+      "apellido": "Morales Martínez",
+      "email": "morales.martinez@misotronica.com",
+      "imagen": "https://images.generated.photos/e5Gc65yDLWXY_eMdu_wd14BoG0YMWS9eVbzpnjnsdJM/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wOTcw/NTIzLmpwZw.jpg",
+      "fullName": "Juan Morales Martínez",
+      "description": "Juan es un vendedor carismático y orientado a resultados. Con una fuerte habilidad para establecer conexiones con los clientes, se esfuerza por brindarles una experiencia de compra excepcional. Siempre está al tanto de las últimas ofertas y promociones para ayudar a los clientes a obtener los mejores productos al mejor precio posible."
+    },
+    {
+      "id": 6,
+      "nombre": "Diana",
+      "apellido": "Pérez Silva",
+      "email": "perez.silva@misotronica.com",
+      "imagen": "https://images.generated.photos/d7GVhy6oec_9Pq6fXKqYpBJE0FCw2eoAjBdsV4a6q5M/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wNTUx/Njg5LmpwZw.jpg",
+      "fullName": "Diana Pérez Silva",
+      "description": "Diana es una vendedora creativa y apasionada por la tecnología. Su enfoque innovador y perspicaz le permite identificar las necesidades únicas de los clientes y presentarles soluciones atractivas. Con una actitud positiva y un carisma natural, crea un ambiente acogedor para los clientes y los alienta a explorar las opciones disponibles."
+    },
+    {
+      "id": 7,
+      "nombre": "Ricardo",
+      "apellido": "Vargas Espinoza",
+      "email": "vargas.espinoza@misotronica.com",
+      "imagen": "https://images.generated.photos/Z8JQai6qkwNMYUXTRWaQsVz9dTEWnrOxaz_ynvFvzJw/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wNTA5/NTA3LmpwZw.jpg",
+      "fullName": "Ricardo Vargas Espinoza",
+      "description": "Ricardo es un vendedor con habilidades excepcionales de persuasión y negociación. Siempre está dispuesto a ir más allá para cerrar una venta y asegurarse de que los clientes estén satisfechos con su compra. Su enfoque orientado a resultados y su pasión por el trabajo en equipo hacen que sea un activo invaluable para la tienda."
+    }
+  ],"Recursos Humanos": [
+    {
+      "id": 1,
+      "nombre": "Laura",
+      "apellido": "González López",
+      "email": "laura.gonzalez@misotronica.com",
+      "imagen": "https://images.generated.photos/Xhyvj8QQyX7amxJD0JcnUAWvmSMvYsgSVclX17HOf8M/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy8wNDg5/MDkwLmpwZw.jpg",
+      "fullName": "Laura González López",
+      "description": "Laura es una profesional de Recursos Humanos con una pasión por el desarrollo y bienestar de los empleados. Su enfoque centrado en las personas la convierte en una persona empática y comprensiva, capaz de crear un ambiente de trabajo positivo y motivador. Siempre está dispuesta a escuchar las necesidades de los empleados y proporcionarles el apoyo necesario. Su dedicación a cultivar un equipo talentoso y comprometido es fundamental para el éxito de la empresa."
+    }
+  ]
+}

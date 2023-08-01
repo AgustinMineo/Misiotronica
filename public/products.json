@@ -1,0 +1,412 @@
+[
+    {
+      "id": 1,
+      "productImg": "https://http2.mlstatic.com/D_NQ_NP_857572-MLA32984733165_112019-O.webp",
+      "name": "Cable USB 2.0",
+      "stock": 50,
+      "price": 5.99,
+      "shortDescription": "Cable USB 2.0 de alta velocidad.",
+      "description": "Este cable USB 2.0 de alta velocidad te permite transferir datos y cargar dispositivos de manera rápida y segura.",
+      "category": "Electrónicos"
+    },
+    {
+      "id": 2,
+      "productImg": "https://http2.mlstatic.com/D_NQ_NP_844289-MLA43774131499_102020-O.webp",
+      "name": "Placa Arduino UNO R3",
+      "stock": 20,
+      "price": 12.99,
+      "shortDescription": "Placa Arduino UNO R3 para proyectos de electrónica.",
+      "description": "La placa Arduino UNO R3 es ideal para proyectos de electrónica y programación. Viene con puertos GPIO y puede ser programada para realizar diversas tareas.",
+      "category": "Electrónicos"
+    },
+    {
+      "id": 3,
+      "productImg": "https://http2.mlstatic.com/D_NQ_NP_622744-MLA31114697870_062019-O.webp",
+      "name": "Batería Recargable 18650",
+      "stock": 100,
+      "price": 3.49,
+      "shortDescription": "Batería recargable de litio 18650.",
+      "description": "Esta batería recargable de litio 18650 es ampliamente utilizada en dispositivos electrónicos portátiles como linternas, cámaras y más.",
+      "category": "Electrónicos"
+    },
+    {
+      "id": 4,
+      "productImg": "https://http2.mlstatic.com/D_NQ_NP_740236-MLA69910637706_062023-O.webp",
+      "name": "Tira de Luces LED RGB",
+      "stock": 30,
+      "price": 15.99,
+      "shortDescription": "Tira de luces LED RGB para decoración.",
+      "description": "Esta tira de luces LED RGB es perfecta para crear ambientes de iluminación decorativa en tu hogar u oficina. Viene con control remoto para cambiar los colores y efectos de iluminación.",
+      "category": "Electrónicos"
+    },
+    {
+      "id": 5,
+      "productImg": "https://http2.mlstatic.com/D_NQ_NP_865700-MLU69018025630_042023-O.webp",
+      "name": "Sensor de Movimiento PIR",
+      "stock": 15,
+      "price": 8.75,
+      "shortDescription": "Sensor de movimiento PIR para proyectos de automatización.",
+      "description": "El sensor de movimiento PIR (infrarrojo pasivo) es ampliamente utilizado en proyectos de automatización, seguridad y domótica. Detecta movimientos en su área de cobertura y puede ser utilizado con microcontroladores y placas Arduino.",
+      "category": "Electrónicos"
+    },
+    {
+        "id": 6,
+        "productImg": "https://http2.mlstatic.com/D_NQ_NP_819364-MLA54966621644_042023-O.webp",
+        "name": "Smartphone",
+        "stock": 15,
+        "price": 299.99,
+        "shortDescription": "Teléfono inteligente con pantalla HD y cámara de alta resolución.",
+        "description": "Este smartphone de última generación te brinda un rendimiento excepcional y una experiencia móvil de primer nivel.",
+        "category": "Electrónicos"
+      },
+      {
+        "id": 7,
+        "productImg": "https://http2.mlstatic.com/D_NQ_NP_706774-MLA49415907358_032022-O.webp",
+        "name": "Auriculares Inalámbricos",
+        "stock": 10,
+        "price": 79.99,
+        "shortDescription": "Auriculares inalámbricos con cancelación de ruido y sonido de alta calidad.",
+        "description": "Disfruta de tu música y llamadas con la mejor calidad de sonido y total libertad de movimiento.",
+        "category": "Electrónicos"
+      },
+      {
+        "id": 8,
+        "productImg": "https://http2.mlstatic.com/D_NQ_NP_773176-MLA48689975208_122021-O.webp",
+        "name": "Tablet",
+        "stock": 7,
+        "price": 199.99,
+        "shortDescription": "Tablet con pantalla táctil de alta definición y gran rendimiento.",
+        "description": "Una tablet versátil y potente que te permite realizar múltiples tareas y disfrutar de entretenimiento sin límites.",
+        "category": "Electrónicos"
+      },
+      {
+        "id": 9,
+        "productImg": "https://http2.mlstatic.com/D_NQ_NP_981288-MLA40927542388_022020-O.webp",
+        "name": "Cámara DSLR",
+        "stock": 5,
+        "price": 599.99,
+        "shortDescription": "Cámara réflex digital con sensor de alta resolución y funciones avanzadas.",
+        "description": "Captura momentos preciosos con una calidad de imagen excepcional y un control creativo sin igual.",
+        "category": "Electrónicos"
+      },
+      {
+        "id": 10,
+        "productImg": "https://http2.mlstatic.com/D_NQ_NP_944170-MLA50821605362_072022-O.webp",
+        "name": "Smart TV",
+        "stock": 12,
+        "price": 799.99,
+        "shortDescription": "Televisor inteligente con pantalla 4K y acceso a servicios de streaming.",
+        "description": "Disfruta de tus programas y películas favoritas con una calidad de imagen asombrosa y funcionalidades inteligentes.",
+        "category": "Electrónicos"
+      },
+        {
+          "id": 11,
+          "productImg": "https://http2.mlstatic.com/D_NQ_NP_774850-MLA43495940257_092020-O.webp",
+          "name": "Silla de Oficina",
+          "stock": 20,
+          "price": 149.99,
+          "shortDescription": "Silla ergonómica con respaldo ajustable y soporte lumbar.",
+          "description": "Trabaja cómodamente durante horas con esta silla de oficina que brinda un excelente soporte y comodidad.",
+          "category": "Hogar"
+        },
+        {
+          "id": 12,
+          "productImg": "https://http2.mlstatic.com/D_NQ_NP_920024-MLA69439614563_052023-O.webp",
+          "name": "Laptop",
+          "stock": 8,
+          "price": 899.99,
+          "shortDescription": "Laptop ultradelgada con pantalla táctil y alto rendimiento.",
+          "description": "Una laptop perfecta para el trabajo y el entretenimiento, con un diseño elegante y especificaciones potentes.",
+          "category": "Electrónicos"
+        },
+        {
+          "id": 13,
+          "productImg": "https://http2.mlstatic.com/D_NQ_NP_988727-MLA70605264494_072023-O.webp",
+          "name": "Zapatillas Deportivas",
+          "stock": 15,
+          "price": 89.99,
+          "shortDescription": "Zapatillas cómodas y resistentes para actividades deportivas.",
+          "description": "Disfruta de tus actividades físicas con estas zapatillas diseñadas para brindar soporte y amortiguación.",
+          "category": "Moda"
+        },
+        {
+          "id": 14,
+          "productImg": "https://http2.mlstatic.com/D_NQ_NP_711032-MLU70212206439_062023-O.webp",
+          "name": "Proyector",
+          "stock": 6,
+          "price": 299.99,
+          "shortDescription": "Proyector portátil con alta resolución y conectividad versátil.",
+          "description": "Disfruta de una experiencia cinematográfica en cualquier lugar con este proyector de calidad.",
+          "category": "Electrónicos"
+        },
+        {
+          "id": 15,
+          "productImg": "https://http2.mlstatic.com/D_NQ_NP_876242-MLA49909862053_052022-O.webp",
+          "name": "Cafetera",
+          "stock": 10,
+          "price": 49.99,
+          "shortDescription": "Cafetera automática para preparar café con facilidad.",
+          "description": "Disfruta de un delicioso café en casa con esta cafetera práctica y funcional.",
+          "category": "Hogar"
+        },
+        {
+            "id": 16,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_635317-MLA50623883556_072022-O.webp",
+            "name": "Bicicleta de Montaña",
+            "stock": 5,
+            "price": 399.99,
+            "shortDescription": "Bicicleta resistente para recorridos de montaña y aventuras al aire libre.",
+            "description": "Explora senderos y rutas con esta bicicleta de montaña diseñada para rendir en terrenos difíciles.",
+            "category": "Deportes"
+          },
+          {
+            "id": 17,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_806828-MLA48167862055_112021-O.webp",
+            "name": "Robot Aspiradora",
+            "stock": 10,
+            "price": 249.99,
+            "shortDescription": "Robot inteligente para limpiar pisos y alfombras.",
+            "description": "Mantén tus espacios limpios sin esfuerzo con este robot aspiradora que hace el trabajo por ti.",
+            "category": "Hogar"
+          },
+          {
+            "id": 18,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_695918-MLA69983114961_062023-O.webp",
+            "name": "Reloj Inteligente",
+            "stock": 15,
+            "price": 129.99,
+            "shortDescription": "Reloj inteligente con pantalla táctil y seguimiento de actividad.",
+            "description": "Mantente conectado y activo con este reloj inteligente que te brinda funciones avanzadas.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 19,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_797906-MLA45510537434_042021-O.webp",
+            "name": "Bolso de Cuero",
+            "stock": 8,
+            "price": 79.99,
+            "shortDescription": "Bolso de cuero genuino con diseño elegante y compartimentos organizados.",
+            "description": "Completa tu look con este bolso de alta calidad que combina estilo y funcionalidad.",
+            "category": "Moda"
+          },
+          {
+            "id": 20,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_796522-MLA70764179649_072023-O.webp",
+            "name": "Teclado Mecánico para Gaming",
+            "stock": 12,
+            "price": 89.99,
+            "shortDescription": "Teclado mecánico para juegos con retroiluminación personalizable.",
+            "description": "Domina tus juegos con este teclado diseñado para brindar precisión y velocidad.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 21,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_646546-MLA50164098529_062022-O.webp",
+            "name": "Mochila de Excursión",
+            "stock": 6,
+            "price": 69.99,
+            "shortDescription": "Mochila cómoda y duradera para excursiones y viajes al aire libre.",
+            "description": "Lleva todo lo que necesitas para tus aventuras con esta mochila espaciosa y resistente.",
+            "category": "Deportes"
+          },
+          {
+            "id": 22,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_907889-MLA48223752658_112021-O.webp",
+            "name": "Pulsera de Actividad",
+            "stock": 20,
+            "price": 39.99,
+            "shortDescription": "Pulsera de actividad para monitorear tu salud y entrenamientos.",
+            "description": "Lleva un registro de tu actividad física y cuida tu salud con esta pulsera inteligente.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 23,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_856873-MLA50525984857_062022-O.webp",
+            "name": "Zapatos Casuales",
+            "stock": 10,
+            "price": 59.99,
+            "shortDescription": "Zapatos casuales para uso diario con diseño moderno.",
+            "description": "Completa tus looks casuales con estos zapatos cómodos y a la moda.",
+            "category": "Moda"
+          },
+          {
+            "id": 24,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_792681-MLA52320967183_112022-O.webp",
+            "name": "Raqueta de Tenis",
+            "stock": 8,
+            "price": 149.99,
+            "shortDescription": "Raqueta de tenis para jugadores avanzados con tecnología de alto rendimiento.",
+            "description": "Mejora tu juego con esta raqueta de tenis diseñada para ofrecer control y potencia.",
+            "category": "Deportes"
+          },
+          {
+            "id": 25,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_973349-MLA53353467762_012023-O.webp",
+            "name": "Altavoz Bluetooth",
+            "stock": 15,
+            "price": 49.99,
+            "shortDescription": "Altavoz portátil con tecnología Bluetooth y sonido estéreo.",
+            "description": "Disfruta de tu música favorita en cualquier lugar con este altavoz inalámbrico.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 26,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_926906-MLA52992964409_122022-O.webp",
+            "name": "Sudadera con Capucha",
+            "stock": 20,
+            "price": 39.99,
+            "shortDescription": "Sudadera con capucha y diseño moderno para uso diario.",
+            "description": "Mantente cómodo y a la moda con esta sudadera versátil.",
+            "category": "Moda"
+          },
+          {
+            "id": 27,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_896508-MLA69925255453_062023-O.webp",
+            "name": "Bicicleta Estática",
+            "stock": 7,
+            "price": 279.99,
+            "shortDescription": "Bicicleta estática para entrenamientos cardiovasculares en casa.",
+            "description": "Mantén tu condición física desde la comodidad de tu hogar con esta bicicleta estática.",
+            "category": "Deportes"
+          },
+          {
+            "id": 28,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_694232-MLA48231925095_112021-O.webp",
+            "name": "Impresora Multifuncional",
+            "stock": 12,
+            "price": 149.99,
+            "shortDescription": "Impresora multifuncional con conectividad inalámbrica y alta calidad de impresión.",
+            "description": "Simplifica tus tareas de impresión, escaneo y copiado con esta impresora versátil.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 29,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_954024-MLA70323391527_072023-O.webp",
+            "name": "Mochila para Portátil",
+            "stock": 9,
+            "price": 49.99,
+            "shortDescription": "Mochila resistente para llevar tu portátil y accesorios.",
+            "description": "Protege tu portátil y mantén tus dispositivos organizados con esta mochila funcional.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 30,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_823250-MLA54435650418_032023-O.webp",
+            "name": "Balón de Fútbol",
+            "stock": 15,
+            "price": 24.99,
+            "shortDescription": "Balón de fútbol profesional con diseño duradero.",
+            "description": "Disfruta del juego con este balón de fútbol que brinda un rendimiento excepcional.",
+            "category": "Deportes"
+          },
+          {
+            "id": 31,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_830860-MLA53765714120_022023-O.webp",
+            "name": "Reproductor de MP3",
+            "stock": 8,
+            "price": 39.99,
+            "shortDescription": "Reproductor de MP3 compacto con almacenamiento ampliable.",
+            "description": "Lleva tu música a todas partes con este reproductor de MP3 fácil de usar.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 32,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_832486-MLA44444989466_122020-O.webp",
+            "name": "Camiseta Deportiva",
+            "stock": 20,
+            "price": 19.99,
+            "shortDescription": "Camiseta deportiva transpirable para entrenamientos intensos.",
+            "description": "Mantén la comodidad durante tus entrenamientos con esta camiseta de alta calidad.",
+            "category": "Deportes"
+          },
+          {
+            "id": 33,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_735145-MLA48131216536_112021-O.webp",
+            "name": "Monitor de Computadora",
+            "stock": 5,
+            "price": 249.99,
+            "shortDescription": "Monitor de computadora de alta resolución y amplia pantalla.",
+            "description": "Mejora tu experiencia de trabajo y entretenimiento con este monitor de calidad.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 34,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_874130-MLA54741827841_032023-O.webp",
+            "name": "Gafas de Sol",
+            "stock": 12,
+            "price": 59.99,
+            "shortDescription": "Gafas de sol con protección UV y diseño moderno.",
+            "description": "Protege tus ojos del sol y añade estilo a tu outfit con estas gafas de sol.",
+            "category": "Moda"
+          },
+          {
+            "id": 35,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_627342-MLA51825008555_102022-O.webp",
+            "name": "Bolsa de Gimnasio",
+            "stock": 6,
+            "price": 29.99,
+            "shortDescription": "Bolsa espaciosa para llevar tus pertenencias al gimnasio.",
+            "description": "Organiza tus objetos de entrenamiento con esta bolsa de gimnasio resistente.",
+            "category": "Deportes"
+          },
+          {
+            "id": 36,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_830147-MLA48379556895_112021-O.webp",
+            "name": "Auriculares con Cable",
+            "stock": 20,
+            "price": 29.99,
+            "shortDescription": "Auriculares con cable de alta calidad y sonido claro.",
+            "description": "Disfruta de tu música con estos auriculares cómodos y fiables.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 37,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_809543-MLA41634735796_052020-O.webp",
+            "name": "Chaqueta de Cuero",
+            "stock": 8,
+            "price": 129.99,
+            "shortDescription": "Chaqueta de cuero genuino con estilo clásico y duradero.",
+            "description": "Completa tu look con esta chaqueta de cuero de alta calidad.",
+            "category": "Moda"
+          },
+          {
+            "id": 38,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_676417-MLA53282814782_012023-O.webp",
+            "name": "Cámara de Seguridad",
+            "stock": 10,
+            "price": 79.99,
+            "shortDescription": "Cámara de seguridad con visión nocturna y detección de movimiento.",
+            "description": "Mantén tu hogar seguro con esta cámara de vigilancia de fácil instalación.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 39,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_776243-MLA53544159020_012023-O.webp",
+            "name": "Mochila para Laptop",
+            "stock": 15,
+            "price": 59.99,
+            "shortDescription": "Mochila acolchada para proteger tu laptop y accesorios.",
+            "description": "Transporta tu laptop con seguridad y comodidad gracias a esta mochila.",
+            "category": "Electrónicos"
+          },
+          {
+            "id": 40,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_829610-MLA51619613249_092022-O.webp",
+            "name": "Pelota de Basquet",
+            "stock": 9,
+            "price": 34.99,
+            "shortDescription": "Pelota de Basquet de alta calidad y diseño duradero.",
+            "description": "Mejora tu juego con esta pelota de Basquet diseñada para un rendimiento óptimo.",
+            "category": "Deportes"
+          },
+          {
+            "id": 41,
+            "productImg": "https://http2.mlstatic.com/D_NQ_NP_923373-MLA43581598207_092020-O.webp",
+            "name": "Altavoz Inteligente",
+            "stock": 12,
+            "price": 149.99,
+            "shortDescription": "Altavoz inteligente con asistente de voz y conectividad Wi-Fi.",
+            "description": "Controla tu hogar y disfruta de tu música con este altavoz inteligente.",
+            "category": "Electrónicos"
+          }
+  ]
