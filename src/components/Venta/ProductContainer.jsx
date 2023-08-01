@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProductsList } from './ProductsList';
 import { Products } from './Products/Products';
-import './ProductContainer.css';
 
 function ProductContainer() {
   const [products, setProducts] = useState([]);
@@ -25,7 +24,7 @@ function ProductContainer() {
     };
     fetchData();
   }, []);
-  //Filtro de productos
+  //Filtros
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -41,7 +40,6 @@ function ProductContainer() {
       (selectedCategory === '' || product.category === selectedCategory)
     );
   });
-//Filtro de productos
 //Categorias
   const categories = [...new Set(products.map((product) => product.category))];
 //Errores posibles
@@ -54,7 +52,7 @@ function ProductContainer() {
 
   return (
     <>
-      <div className='w-100 d-flex align-items-center justify-content-center search-bar'>
+      <div className='w-100 d-flex align-items-center justify-content-center flex-wrap'>
         <input
           type="text"
           placeholder="Buscar productos... "
@@ -62,7 +60,7 @@ function ProductContainer() {
           onChange={handleSearchChange}
           className='w-50 my-5 rounded border border-3 border-secondary form-control'
         />
-        <div className='mx-5'>
+        <div className='mx-5 d-flex aling-items-center justify-content-center'>
           <select className='btn btn-primary' value={selectedCategory} onChange={handleCategoryChange}>
             <option value="">Todas las categorías</option>
             {categories.map((category) => (

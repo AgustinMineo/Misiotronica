@@ -20,8 +20,8 @@ function Footer() {
                 <li><a className="text-dark text-decoration-none" href='https://www.instagram.com/'><FaInstagram/> Instagram</a></li>
                 <li><a className="text-dark text-decoration-none" href='https://telegram.org/'><FaTelegram/> Telegram</a></li>
               </ul>
-          </div>
-          <div className="col-lg-3 col-xs-12 mt-3">
+          </div> 
+          <div className="col-lg-3 col-xs-12 mt-1">
             <h4 className="mt-lg-0 mt-sm-3">Secciones</h4>
               <ul className="m-0 p-0 list-unstyled text-decoration-none">
                 <li><NavLink className="text-dark text-decoration-none" to="/products">Ventas</NavLink></li>
