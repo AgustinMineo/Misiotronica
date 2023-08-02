@@ -12,7 +12,7 @@ function Header() {
         </div>
         <div className="col-lg-7 col-xl-7 align-items-center d-flex col-md-7 align-styles">
             <div className="text-center">
-              <h1 className=''> Misiotrónica electronica</h1>
+              <h1 className=''> Misiotrónica electrónica</h1>
             </div>
         </div>
         <hr/>

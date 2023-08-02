@@ -13,7 +13,7 @@ function Home() {
 			</div>
 			<div className='text-center my-5'>
 				<hr/>
-				<h1>Porque elegirnos</h1>
+				<h1>¿Por qué elegirnos?</h1>
 			</div>
 		  	<div className="sections">
 				<div className="section">
@@ -24,11 +24,11 @@ function Home() {
 				<hr/>
 				<div className=" text-start sections">
 					<div className=''>
-						<h3 className="section-title">Calidad y Garantizada</h3>
+						<h3 className="section-title">Calidad Garantizada</h3>
 					</div>
 					<div className=''>
 						<p className="section-description">Todos nuestros productos están fabricados con los más 
-						altos estándares de calidad para brindarte el mejor rendimiento.<strong> <br/>¡Ahora con mas variedad de productos!</strong></p>
+						altos estándares de calidad para brindarte el mejor rendimiento.<strong> <br/>¡Ahora con más variedad de productos!</strong></p>
 						<NavLink className="btn btn-primary" to="/products">Visualizar los productos</NavLink>
 					</div>
 				</div>

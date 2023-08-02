@@ -5,9 +5,9 @@ function Contact() {
     <div className='mt-5'>
       <form className='container'>
         <div className="mb-3">
-          <label htmlFor="emailText" className="form-label">Correo electronico *</label>
+          <label htmlFor="emailText" className="form-label">Correo electrónico *</label>
           <input type="email" className="form-control"  id="email" aria-describedby="email" required/>
-          <div id="emailHelp" className="form-text">Nosotros nunca vamos a compartir tu correo con nadie!</div>
+          <div id="emailHelp" className="form-text">¡Nosotros nunca vamos a compartir tu correo con nadie!</div>
         </div>
         <div className="mb-3">
           <label htmlFor="Nombre" className="form-label">Nombre *</label>
@@ -31,7 +31,7 @@ function Contact() {
         </div>
         <div className="mb-3 form-check">
           <input type="checkbox" className="form-check-input" id="nov&ofertas"/>
-          <label className="form-check-label" htmlFor="nov&ofertas">Desea recibir novedades y ofertas?</label>
+          <label className="form-check-label" htmlFor="nov&ofertas">¿Desea recibir novedades y ofertas?</label>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>

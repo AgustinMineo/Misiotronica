@@ -18,7 +18,7 @@ function Products({ id, productImg, name, stock, price, description, shortDescri
     <>
       <div className="card rounded-3 me-4 ms-4 mt-3 card-width" >
         <div className='bg-primary w-25 rounded-bottom position-absolute top-0 end-0 mx-3 text-center'>
-          <p className='my-1 fs-5'>{price}</p>
+          <p className='my-1 fs-5 text-white'>{price}</p>
         </div>
         <div className="">
         <img src={productImg} className="card-img-top mx-0" alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
@@ -29,7 +29,7 @@ function Products({ id, productImg, name, stock, price, description, shortDescri
             <h6 className="card-text text-break">{shortDescription}</h6>
           </div>
           <hr/>
-          <p className=''><span className='fw-bold'>Categoria :</span> {category}</p>
+          <p className=''><span className='fw-bold'>Categoría :</span> {category}</p>
           <p className="card-text"> <span className='fw-bold'>Stock : </span>{stock}</p>
         </div>
         <button className="btn mb-3 details border" onClick={handleOpenModal}>
