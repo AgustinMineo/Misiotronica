@@ -7,7 +7,7 @@ function Header() {
     <div className='w-100 row mt-5 '>
       <div className='col-lg-3 mx-5 col-md-2 align-styles-icon'> 
           <NavLink to='/'>
-            <img className='mx-5' src={logo} alt="Misiotrónica Logo" width={'100px'} height={'100px'} srcset="" />
+            <img className='mx-5' src={logo} alt="Misiotrónica Logo" width={'100px'} height={'100px'} />
           </NavLink>
         </div>
         <div className="col-lg-7 col-xl-7 align-items-center d-flex col-md-7 align-styles">

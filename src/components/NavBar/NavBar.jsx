@@ -11,7 +11,7 @@ function NavBar() {
         <nav className='text-center w-100 sticky-top nav-container'>
           <ul className='list-unstyled '>
             {routes.map((route) => (
-              <li>
+              <li key={route.text}>
                   <NavLink
                       to={route.to}
                       end

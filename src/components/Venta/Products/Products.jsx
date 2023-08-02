@@ -16,7 +16,7 @@ function Products({ id, productImg, name, stock, price, description, shortDescri
 
   return (
     <>
-      <div class="card rounded-3 me-4 ms-4 mt-3 card-width">
+      <div className="card rounded-3 me-4 ms-4 mt-3 card-width">
         <div className='bg-light w-25 rounded-bottom position-absolute top-0 end-0 mx-3 text-center'>
           <p className='my-1'>{price}</p>
         </div>
