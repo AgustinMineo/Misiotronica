@@ -6,6 +6,9 @@
     margin: 15px;
     padding: 15px 30px;
 }
+.cardDetails{
+    min-height: 80px;
+}
 
 .details:hover {
     color: white;

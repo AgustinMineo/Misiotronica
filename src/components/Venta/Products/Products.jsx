@@ -16,15 +16,15 @@ function Products({ id, productImg, name, stock, price, description, shortDescri
 
   return (
     <>
-      <div className="card rounded-3 me-4 ms-4 mt-3 card-width">
-        <div className='bg-light w-25 rounded-bottom position-absolute top-0 end-0 mx-3 text-center'>
-          <p className='my-1'>{price}</p>
+      <div className="card rounded-3 me-4 ms-4 mt-3 card-width" >
+        <div className='bg-primary w-25 rounded-bottom position-absolute top-0 end-0 mx-3 text-center'>
+          <p className='my-1 fs-5'>{price}</p>
         </div>
         <div className="">
         <img src={productImg} className="card-img-top mx-0" alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
         </div>
         <div className="card-body row mb-2 align-items-center">
-          <div className='mb-4'>
+          <div className='mb-4 cardDetails'>
             <h4 className="card-title text-center">{name}</h4>
             <h6 className="card-text text-break">{shortDescription}</h6>
           </div>
