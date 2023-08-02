@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Home.css';
 function Home() {
 	return (
 		<div className="home">
@@ -14,14 +15,14 @@ function Home() {
 				<hr/>
 				<h1>Porque elegirnos</h1>
 			</div>
-		  	<div className="">
+		  	<div className="sections">
 				<div className="section">
 					<h3 className="section-title">Envío Rápido</h3>
 					<p className="section-description">Entregamos tus productos en tiempo récord para que 
 					puedas comenzar tus proyectos sin demoras.</p>
 				</div>
 				<hr/>
-				<div className=" text-start">
+				<div className=" text-start sections">
 					<div className=''>
 						<h3 className="section-title">Calidad y Garantizada</h3>
 					</div>
@@ -32,7 +33,7 @@ function Home() {
 					</div>
 				</div>
 				<hr/>
-				<div className="">
+				<div className="sections">
 					<h3 className="section-title">Atención al cliente</h3>
 					<p className="section-description">Nuestro equipo de atención al cliente está disponible para ayudarte con cualquier consulta o problema que puedas tener.</p>
 					<NavLink className="btn btn-primary" to="/about">Nuestro Equipo</NavLink>
