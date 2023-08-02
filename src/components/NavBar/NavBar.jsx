@@ -1,9 +1,7 @@
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { IoPerson,IoHomeSharp } from "react-icons/io5";
-import { MdGroup } from 'react-icons/md';
-import { FaShoppingCart } from 'react-icons/fa'
-import './NavBar.css'
+import './NavBar.css';
+import {routes} from './NavBarData';
 function NavBar() {
     const [activeRoute, setActiveRoute] = useState('');
   return (
@@ -19,7 +17,9 @@ function NavBar() {
                       aria-current="page"
                       onClick={() => setActiveRoute(route.to)}
                       >
-                      <div key={route.to} className={activeRoute === route.to ? 'text-primary fw-bold' : ''}>{route.icon} {route.text}</div>
+                      <div key={route.to} className={activeRoute === route.to ? 'text-primary fw-bold' : ''}>
+                        {route.icon} {route.text}
+                      </div>
                   </NavLink>
               </li>
             ))}
@@ -28,25 +28,4 @@ function NavBar() {
     </>
   )
 }
-const routes = [];
-routes.push({
-    to:'/',
-    text:'Home',
-    icon: <IoHomeSharp/>,
-});
-routes.push({
-    to:'/contact',
-    text:'Contacto',
-    icon:<IoPerson/>
-});
-routes.push({
-    to:'/about',
-    text:'Sobre Nosotros',
-    icon:<MdGroup/>
-});
-routes.push({
-    to:'/products',
-    text:'Ventas',
-    icon:<FaShoppingCart/>
-});
 export {NavBar}
