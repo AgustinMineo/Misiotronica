@@ -24,22 +24,22 @@ function Footer() {
           <div className="col-lg-3 col-xs-12 mt-1">
             <h4 className="mt-lg-0 mt-sm-3">Secciones</h4>
               <ul className="m-0 p-0 list-unstyled text-decoration-none">
-                <li><NavLink className="text-dark text-decoration-none" to="/products">Ventas</NavLink></li>
-                <li><NavLink className="text-dark text-decoration-none" to="/about">Sobre Nosotros</NavLink></li>
                 <li><NavLink className="text-dark text-decoration-none" to="/">Home</NavLink></li>
                 <li><NavLink className="text-dark text-decoration-none" to="/contact">Contacto</NavLink></li>
+                <li><NavLink className="text-dark text-decoration-none" to="/about">Sobre Nosotros</NavLink></li>
+                <li><NavLink className="text-dark text-decoration-none" to="/products">Ventas</NavLink></li>
               </ul>
           </div>
           <div className="col-lg-4 col-xs-12">
             <h4 className="mt-lg-0 mt-sm-4">Dirección</h4>
-            <p> <GrMapLocation/> Calle falsa 222, Provincia de Buenos Aires</p>
+            <p> <GrMapLocation/> Calle Falsa 222, Provincia de Buenos Aires</p>
             <p className="mb-0"><GrPhone/>+54 999 999 999</p>
             <p className='mt-3'><FaEnvelopeOpen/> info@misotronica.com</p>
           </div>
         </div>
         <div className="row mt-5">
           <div className="col text-center">
-            <p className=""><small className="text">© 2023.Misiotrónica -  All Rights Reserved.</small></p>
+            <p className=""><small className="text">© 2023 - Misiotrónica - All Rights Reserved.</small></p>
           </div>
         </div>
       </div>
