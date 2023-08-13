@@ -21,7 +21,7 @@ function Products({ id, productImg, name, stock, price, description, shortDescri
           <p className='my-1 fs-5 text-white'>{price}</p>
         </div>
         <div className="">
-        <img src={productImg} className="card-img-top mx-0" alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
+          <img src={productImg} className="card-img-top mx-0" alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
         </div>
         <div className="card-body row mb-2 align-items-center">
           <div className='mb-4 cardDetails'>
