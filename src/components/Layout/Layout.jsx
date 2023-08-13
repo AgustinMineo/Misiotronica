@@ -12,9 +12,9 @@ function Layout() {
                 <aside className="col-xl-2 col-lg-12 col-md-12 col-sm-12 z-0 ">
                     <NavBar/>
                 </aside>
-            <main className=" col-xl-10 col-lg-12 col-md-12 col-sm-12">
-                <Outlet />
-            </main>
+                <main className=" col-xl-10 col-lg-12 col-md-12 col-sm-12">
+                    <Outlet />
+                </main>
             </div>
         <Footer/>
         </div>

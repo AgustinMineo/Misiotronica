@@ -24,39 +24,56 @@ function About() {
       <div className="py-4 container mx-0">
         <div className="container mt-5">
           <h1 className='mb-3'>Pasión por la electrónica</h1>
-          <h4 className='mb-4'>Con Misiotrónica, la electrónica cobra vida y la tecnología está al alcance de tus manos.</h4>
+          <h4 className='mb-4'>Con Misiotrónica, la electrónica cobra vida y 
+          la tecnología está al alcance de tus manos.</h4>
           <p>
             ¡Bienvenidos a Misiotrónica, tu socio de confianza en el apasionante mundo 
-            de la electrónica y variedad! En Misiotrónica, estamos dedicados a ofrecerte una experiencia de compra única y satisfactoria.
+            de la electrónica y variedad! En Misiotrónica, estamos dedicados a 
+            ofrecerte una experiencia de compra única y satisfactoria.
           </p>
           <p>
-            Nuestro equipo de ventas está formado por expertos apasionados por la tecnología. Cada miembro de nuestro equipo está altamente 
-            capacitado y siempre está al tanto de las últimas novedades y avances en el mundo de la electrónica. 
-            ¿Buscas el último smartphone de vanguardia, una computadora de alto rendimiento u otros dispositivos electrónicos innovadores?
-            ¡Estamos aquí para asesorarte! Comprendemos que cada cliente es único, y nuestro objetivo es recomendarte las mejores 
-            opciones personalizadas para satisfacer tus necesidades y superar tus expectativas.
+            Nuestro equipo de ventas está formado por expertos apasionados por la 
+            tecnología. Cada miembro de nuestro equipo está altamente 
+            capacitado y siempre está al tanto de las últimas novedades y avances 
+            en el mundo de la electrónica. 
+            ¿Buscas el último smartphone de vanguardia, una computadora de alto 
+            rendimiento u otros dispositivos electrónicos innovadores?
+            ¡Estamos aquí para asesorarte! Comprendemos que cada cliente es único, 
+            y nuestro objetivo es recomendarte las mejores 
+            opciones personalizadas para satisfacer tus necesidades y superar tus 
+            expectativas.
           </p>
           <p>
-            En Misiotrónica, nuestra prioridad es brindarte una experiencia de atención al cliente sobresaliente. 
-            Nuestro equipo está disponible para ayudarte con cualquier consulta o problema que puedas tener. 
-            Desde responder preguntas técnicas hasta brindarte soporte posventa, estamos comprometidos a proporcionarte respuestas rápidas, 
+            En Misiotrónica, nuestra prioridad es brindarte una experiencia de 
+            atención al cliente sobresaliente. 
+            Nuestro equipo está disponible para ayudarte con cualquier consulta 
+            o problema que puedas tener. 
+            Desde responder preguntas técnicas hasta brindarte soporte posventa, 
+            estamos comprometidos a proporcionarte respuestas rápidas, 
             precisas y amigables. Tu satisfacción es nuestra mayor recompensa.
           </p>
           <p>
-            Nos enorgullecemos de contar con un equipo de atención al cliente cálido y accesible. 
-            No solo somos expertos en tecnología, sino que también valoramos la importancia de escuchar tus inquietudes y 
-            proporcionarte soluciones efectivas. Ya sea que necesites ayuda para configurar un dispositivo, 
-            resolver problemas técnicos o hacer seguimiento de tu pedido, estamos aquí para brindarte una asistencia 
+            Nos enorgullecemos de contar con un equipo de atención al cliente 
+            cálido y accesible. 
+            No solo somos expertos en tecnología, sino que también valoramos la 
+            importancia de escuchar tus inquietudes y 
+            proporcionarte soluciones efectivas. Ya sea que necesites ayuda para 
+            configurar un dispositivo, 
+            resolver problemas técnicos o hacer seguimiento de tu pedido, estamos 
+            aquí para brindarte una asistencia 
             personalizada en cada paso del proceso.
           </p>
           <p>
-            En Misiotrónica, apreciamos tus opiniones y sugerencias. Creemos que tu feedback es esencial para mejorar constantemente 
-            nuestros servicios y productos. Siempre estamos en busca de maneras de superar tus expectativas y 
+            En Misiotrónica, apreciamos tus opiniones y sugerencias. Creemos que 
+            tu feedback es esencial para mejorar constantemente 
+            nuestros servicios y productos. Siempre estamos en busca de maneras 
+            de superar tus expectativas y 
             brindarte una experiencia de compra inigualable.
           </p>
           <p>
             Gracias por elegir a Misiotrónica como tu destino tecnológico. <br/><br/>
-            <span className='fw-bold'>¡Únete a nuestra comunidad de amantes de la electrónica y descubre un mundo de posibilidades 
+            <span className='fw-bold'>¡Únete a nuestra comunidad de amantes de 
+            la electrónica y descubre un mundo de posibilidades 
             con Misiotrónica!</span>
           </p>
           </div>
