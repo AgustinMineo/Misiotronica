@@ -22,7 +22,7 @@ function Footer() {
               </li>
               <li>
                 <a className="text-dark text-decoration-none" href='https://www.linkedin.com/'>
-                  <FaLinkedin/> 
+                  <FaLinkedin/>
                   Linkedin
                 </a>
               </li>
