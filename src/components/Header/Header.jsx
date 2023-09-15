@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './src/logo.svg';
 import { NavLink } from 'react-router-dom';
+import { FaRegUser, FaClipboardUser} from "react-icons/fa6";
 import './Header.css'
 function Header() {
   return (
@@ -10,12 +11,21 @@ function Header() {
             <img className='mx-5' src={logo} alt="Misiotrónica Logo" width={'100px'} height={'100px'} />
           </NavLink>
         </div>
-        <div className="col-lg-7 col-xl-7 align-items-center d-flex col-md-7 align-styles">
-            <div className="text-center ">
+        <div className="col-lg-6 col-xl-6 align-items-center d-flex col-md-6 align-styles">
+            <div className="text-center">
               <h1> 
                 Misiotrónica electrónica
               </h1>
             </div>
+        </div>
+        <div className="col-lg-2 d-flex align-items-center link-dark">
+          <NavLink to='/Login' className="text-decoration-none link-dark">
+            <h6 className='mx-1'><FaRegUser/> Login</h6>
+          </NavLink>
+          <NavLink to='/Register' className="text-decoration-none link-dark">
+            <h6 className='mx-1'><FaClipboardUser/> Registro</h6>
+            
+          </NavLink>
         </div>
         <hr/>
     </div>
