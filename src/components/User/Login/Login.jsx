@@ -1,14 +1,19 @@
 import { React, useState } from 'react';
 import {validateUsuario, validatePassword } from './validations';
+import ReCAPTCHA from "react-google-recaptcha";
 function Login() {
   const [userError, setUserError] = useState(false);
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState(false);
+  const [captcha, setCaptcha] = useState('');
+  const [captchaError, setCaptchaError] = useState(false);
+
   const handleLogin = (e) => {
     e.preventDefault();
     setUserError(false);
     setPasswordError(false);
+    setCaptchaError(false);
     const userValidationResult = validateUsuario(usuario);
     if (userValidationResult !== true) {
       setUserError(userValidationResult);
@@ -19,13 +24,26 @@ function Login() {
       setPasswordError(passwordValidationResult);
       return;
     }
-  };
 
+    if (!captcha) {
+      setCaptchaError(true);
+      console.log(captchaError);
+      return;
+    }else{
+      setCaptchaError(false);
+    }
+    if(captcha && passwordValidationResult &&userValidationResult ){
+      console.log('Log correcto.');
+    }
+  }
+  const handleCaptchaChange = (value) => {
+    setCaptcha(value);
+  }
   return (
     <div className='container mx-5 my-5'>
       <div className="row justify-content-md-center ">
         <div className="col">
-        <form>
+        <form onSubmit={handleLogin}>
         <div className="mb-3">
           <label htmlFor="Username" className="form-label">Username</label>
           <input
@@ -50,6 +68,13 @@ function Login() {
         />{passwordError && (
           <div className="invalid-feedback">{passwordError}</div>
         )}
+        </div>
+        <div className="mb-3" id='recaptcha'>
+          <ReCAPTCHA
+            value={captcha}
+            sitekey="6LeD9CkoAAAAAGDqpUj_ZaEUHRs1LEmoC5Sw8mvf"
+            onChange={handleCaptchaChange}
+            /> 
         </div>
           <div className="">
             <button type="submit" className="btn btn-primary" onClick={handleLogin}>

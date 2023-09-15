@@ -1,5 +1,6 @@
 import {React, useState } from 'react';
 import { validateEmail, validateUsuario, validatePassword } from './validations';
+import ReCAPTCHA from "react-google-recaptcha";
 function Register() {
   const [email, setEmail] = useState('');
   const [usuario, setUsuario] = useState('');
@@ -8,6 +9,8 @@ function Register() {
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [userError, setUserError] = useState(false);
+  const [captcha, setCaptcha] = useState('');
+  
 
   const handleRegisterClick = (e) => {
     e.preventDefault();
@@ -33,7 +36,16 @@ function Register() {
       setPasswordError(passwordValidationResult);
       return;
     }
+    if (!captcha) { 
+      return;
+    }
+    
+    
   };
+  const handleCaptchaChange = (value) => {
+    setCaptcha(value);
+  };
+
   return (
     <div className="">
       <h1 className=''>Registro</h1>
@@ -131,6 +143,13 @@ function Register() {
         <div class="col-12">
           <label for="inputAddress2" class="form-label">Detalles</label>
           <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estudio, piso, etc"/>
+        </div>
+        <div className="mb-3" id='recaptcha'>
+          <ReCAPTCHA
+            value={captcha}
+            sitekey="6LeD9CkoAAAAAGDqpUj_ZaEUHRs1LEmoC5Sw8mvf"
+            onChange={handleCaptchaChange}
+            /> 
         </div>
         <div class="col-12 d-flex aling-items-center justify-content-center mt-5">
           <button type="submit" class="btn btn-primary " onClick={handleRegisterClick}>Registrarse </button>
