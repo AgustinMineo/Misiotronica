@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductModal.css';
 import { MdAddShoppingCart } from "react-icons/md";
 import Swal from 'sweetalert2';
-function ProductModal({ productImg, name, stock, price, description, onClose }) {
+function ProductModal({ productImg,extraImages, name, stock, price, description, onClose }) {
+  const [currentImage, setCurrentImage] = React.useState(productImg);
   const handleAddToCart = () => {
     Swal.fire({
       title: 'Añadir al carrito',
       text: `¿Deseas agregar "${name}" al carrito?`,
-      imageUrl: `${productImg}`,
-      imageAlt:`Imagen del producto ${productImg}`,
+      imageUrl: `${currentImage}`,
+      imageAlt:`Imagen del producto ${currentImage}`,
       imageHeight:300,
       imageWidth:300,
       showCancelButton: true,
@@ -30,17 +31,31 @@ function ProductModal({ productImg, name, stock, price, description, onClose }) 
     });
   };
 
+  const handleImageChange = (image) => {
+    setCurrentImage(image);
+  };
+  const extraImagesAr = [productImg, ...extraImages]; // Muto el array de imagenes para agregar el Imgproducto
+
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content">
+      <div className="modal-content text-center">
         <div className="modal-header">
           <h3>{name}</h3>
           <button className="btn-close" onClick={onClose}></button>
         </div>
         <div className="modal-body">
           <div className="text-center">
-            <img src={productImg} alt={'Imagen del producto ' + name} width={'300px'} height={'300px'} />
+            <div className="product-modal__main-image">
+              <img src={currentImage} alt={'Imagen del producto ' + name} width={'200px'} height={'200px'} object-fit="cover"/>
+            </div>
           </div>
+          <div className="product-modal__images">
+          {extraImagesAr.map((image) => (
+            <div className="product-modal__image border border-1" key={image} >
+              <img src={image} alt={'Imagen del producto ' + name} width={'100px'} height={'50px'} onClick={(e) =>{e.stopPropagation(); handleImageChange(image)}}/>
+            </div>
+          ))}
+        </div>
           <div className="text-container">
             <p className='mx-5'>{description}</p>
           </div>
@@ -54,7 +69,7 @@ function ProductModal({ productImg, name, stock, price, description, onClose }) 
           </div>
         </div>
         <div className="modal-footer d-flex justify-content-center align-items-center">
-          <button className="btn mb-3 details border" onClick={handleAddToCart}>
+          <button className="btn mb-3 details border" onClick={handleAddToCart} disabled={stock === 0} >
           <MdAddShoppingCart/> Añadir al carrito
           </button>
         </div>

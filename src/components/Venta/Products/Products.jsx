@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { ProductModal } from '../ProductModal/ProductModal';
 import './Products.css'
 
-function Products({ id, productImg, name, stock, price, description, shortDescription,category }) {
+function Products({ id, productImg, extraImages, name, stock, price, description, shortDescription,category }) {
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -39,7 +39,7 @@ function Products({ id, productImg, name, stock, price, description, shortDescri
 
       {openModal &&
         createPortal(
-          <ProductModal productImg={productImg} name={name} stock={stock} price={price} description={description} onClose={handleCloseModal} />,
+          <ProductModal productImg={productImg} extraImages={extraImages} name={name} stock={stock} price={price} description={description} onClose={handleCloseModal} />,
           document.getElementById('modal-root')
         )}
     </>
