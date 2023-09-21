@@ -49,13 +49,20 @@ function ProductModal({ productImg,extraImages, name, stock, price, description,
               <img src={currentImage} alt={'Imagen del producto ' + name} width={'200px'} height={'200px'} object-fit="cover"/>
             </div>
           </div>
-          <div className="product-modal__images">
-          {extraImagesAr.map((image) => (
-            <div className="product-modal__image border border-1" key={image} >
-              <img src={image} alt={'Imagen del producto ' + name} width={'100px'} height={'50px'} onClick={(e) =>{e.stopPropagation(); handleImageChange(image)}}/>
-            </div>
-          ))}
-        </div>
+          <div className="product-modal__images ">
+            {extraImagesAr.map((image) => (
+              <div className="product-modal__image border border-1" key={image} >
+                <img
+                  src={image}
+                  alt={'Imagen del producto ' + name}
+                  width={'100px'}
+                  height={'50px'}
+                  className=''
+                  onClick={(e) => { e.stopPropagation(); handleImageChange(image) }}
+                />
+              </div>
+            ))}
+          </div>
           <div className="text-container">
             <p className='mx-5'>{description}</p>
           </div>

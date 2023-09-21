@@ -130,7 +130,7 @@ function ProductContainer() {
           </select>
         </div>
       </div>
-      <div className='mx-4 d-flex flex-wrap w-50 aling-items-center justify-content-center'>
+      <div className='mx-4 d-flex flex-wrap w-50 aling-items-center justify-content-center filters'>
         <div className='w-100'>
         <div className='fw-bold fs-5 mb-2'>El total de productos es : {totalProducts}</div>
           <button className="btn btn-primary mb-2" onClick={collapseToggle}>
@@ -139,7 +139,7 @@ function ProductContainer() {
           <div className="row">
             <div className="col-12">
               <div className={`collapse ${collaps ? 'show' : ''}`}>
-                <div className="card card-body">
+                <div className="card card-body card-body-filters">
                     <div className='text-center d-flex flex-wrap aling-items-center justify-content-center'>
                       <p className='text-center fw-bold w-100'>Precio</p>
                       <input
@@ -158,11 +158,13 @@ function ProductContainer() {
                       />
                       <button className='btn btn-primary w-25 mx-5 mt-2' onClick={handlePriceFilter}>Filtrar</button>
                       <button className='btn btn-danger w-25 mx-5 mt-2' onClick={resetProductList} >Restaurar</button>
-                      {filterError && <p className='text-danger'> {filterError}</p>}
+                      <div className="error">
+                        {filterError && <p className='text-danger'> {filterError}</p>}
+                      </div>
                     </div>
                 </div>
-                <div className='mt-2'>
-                  <button className='btn btn-primary w-100' onClick={handleOrderBy}>{ orderBy ==='desc' ? 'Ordenar de Mayor precio' : 'Ordenar de Menor precio'}</button>
+                <div className='mt-2 order'>
+                  <button className='btn btn-primary w-100 ' onClick={handleOrderBy}>{ orderBy ==='desc' ? 'Ordenar de Mayor precio' : 'Ordenar de Menor precio'}</button>
                 </div>
               </div>
             </div>
