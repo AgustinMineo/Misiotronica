@@ -20,7 +20,7 @@ function Header() {
         </div>
         <div className="col-xl-2 col-lg-12 col-md-12 d-flex align-items-center justify-content-center link-dark">
           <NavLink to='/Login' className="text-decoration-none link-dark">
-            <h6 className='mx-1'><FaRegUser/> Login</h6>
+            <h6 className='mx-1 '><FaRegUser/> Login</h6>
           </NavLink>
           <NavLink to='/Register' className="text-decoration-none link-dark">
             <h6 className='mx-1'><FaClipboardUser/> Registro</h6>
