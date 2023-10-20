@@ -34,7 +34,15 @@ function ProductModal({ productImg,extraImages, name, stock, price, description,
   const handleImageChange = (image) => {
     setCurrentImage(image);
   };
-  const extraImagesAr = [productImg, ...extraImages]; // Muto el array de imagenes para agregar el Imgproducto
+  
+  let extraImagesAr = []
+  if(extraImages.length >1){
+    for(let i=0; i<extraImages.length ; i++){
+      extraImagesAr[i]=extraImages[i].image
+    }
+  }else{
+     extraImagesAr = [productImg, ...extraImages];
+  }
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -49,8 +57,9 @@ function ProductModal({ productImg,extraImages, name, stock, price, description,
               <img src={currentImage} alt={'Imagen del producto ' + name} width={'200px'} height={'200px'} object-fit="cover"/>
             </div>
           </div>
-          <div className="product-modal__images ">
-            {extraImagesAr.map((image) => (
+         { <div className="product-modal__images ">
+            {
+            extraImagesAr.map((image) => (
               <div className="product-modal__image border border-1" key={image} >
                 <img
                   src={image}
@@ -62,7 +71,7 @@ function ProductModal({ productImg,extraImages, name, stock, price, description,
                 />
               </div>
             ))}
-          </div>
+            </div>}
           <div className="text-container">
             <p className='mx-5'>{description}</p>
           </div>

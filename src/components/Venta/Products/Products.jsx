@@ -6,6 +6,7 @@ import './Products.css'
 function Products({ id, productImg, extraImages, name, stock, price, description, shortDescription,category }) {
   const [openModal, setOpenModal] = useState(false);
 
+
   const handleOpenModal = () => {
     setOpenModal(true);
   };

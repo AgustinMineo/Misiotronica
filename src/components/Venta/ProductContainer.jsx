@@ -19,10 +19,12 @@ function ProductContainer() {
     setCollaps(!collaps);
   }
 
-  
-    const fetchData = async () => {
+  const fetchData = async () => {
+      const urlAPI = 'https://misiotronica.up.railway.app/productos/'
+
       try {
-        const response = await fetch('/products.json');
+       // const response = await fetch("/products.json");
+       const response = await fetch(urlAPI);
         const data = await response.json();
         setProducts(data);
         setLoading(false);
@@ -47,16 +49,16 @@ function ProductContainer() {
   };
   
   const filteredProducts = products.filter((product) => {
-
     return (
-      (product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        product.shortDescription.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedCategory === '' || product.category === selectedCategory)
+      (product.Nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.DetalleCorto.toLowerCase().includes(searchTerm.toLowerCase())) &&
+      (selectedCategory === '' || product.CategoriaProductos[0].Nombre === selectedCategory)
     );
   });
   
   useEffect(( )=>{
     setTotalProducts(products.length);
+
   },[products]);
   
   const handlePriceFilter = () => {
@@ -99,8 +101,8 @@ function ProductContainer() {
   }
 
 //Categorias
-
-  const categories = [...new Set(products.map((product) => product.category))];
+  
+  const categories = [...new Set(products.map((product) =>  product.CategoriaProductos[0].Nombre))];
 //Errores posibles
   if (loading) {
     return <p>Cargando productos...</p>;
@@ -171,22 +173,22 @@ function ProductContainer() {
           </div>
         </div>
       </div>
-      {filteredProducts.length === 0 ? (
+      { filteredProducts.length === 0 ? (
         <h1>No existen productos con ese nombre.</h1>
       ) : (
         <ProductsList>
-          {filteredProducts.map((prod) => (
+          { filteredProducts.map((prod) => (
             <Products
-              key={prod.id}
+              key={prod.sku}
               id={prod.id}
-              productImg={prod.productImg}
-              extraImages={prod.extraImages}
-              name={prod.name}
-              stock={prod.stock}
-              price={prod.price}
-              shortDescription={prod.shortDescription}
-              description={prod.description}
-              category={prod.category}
+              productImg={prod.Imagen}
+              extraImages={prod.ProductImages}
+              name={prod.Nombre}
+              stock={prod.Stock}
+              price={prod.Precio}
+              shortDescription={prod.DetalleCorto}
+              description={prod.Detalle}
+              category={prod.CategoriaProductos[0].Nombre}
             />
           ))}
         </ProductsList>

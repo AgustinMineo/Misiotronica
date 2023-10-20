@@ -1,37 +1,92 @@
-import React from 'react'
+import {React,useState} from 'react'
+import {consultaForm} from './validations.js'
 
 function Contact() {
-  return (
+
+  const [formData, setFormData] = useState({
+    email: '',
+    name: '',
+    apellido: '',
+    direccion: '',
+    altura: '',
+    nota: '',
+  });
+  
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+  
+  const handleSubmit = async (e) => {
+   
+    consultaForm(formData)
+  };
+
+   return (
     <div className='mt-5'>
-      <form className='container'>
+      <form className='container' onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="emailText" className="form-label">Correo electrónico *</label>
-          <input type="email" className="form-control"  id="email" aria-describedby="email" required/>
-          <div id="emailHelp" className="form-text">¡Nosotros nunca vamos a compartir tu correo con nadie!</div>
+          <label htmlFor="email" className="form-label">Correo electrónico *</label>
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
         </div>
         <div className="mb-3">
-          <label htmlFor="Nombre" className="form-label">Nombre *</label>
-          <input type="text" className="form-control" id="name" required/>
+          <label htmlFor="name" className="form-label">Nombre *</label>
+          <input
+            type="text"
+            className="form-control"
+            id="name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+          />
         </div>
         <div className="mb-3">
-          <label htmlFor="Apellido" className="form-label">Apellido *</label>
-          <input type="text" className="form-control" id="apellido" required/>
+          <label htmlFor="apellido" className="form-label">Apellido *</label>
+          <input
+            type="text"
+            className="form-control"
+            id="apellido"
+            required
+            value={formData.apellido}
+            onChange={handleChange}
+          />
         </div>
         <div className="mb-3">
-          <label htmlFor="Direccion" className="form-label">Dirección</label>
-          <input type="text" className="form-control" id="direccion" />
+          <label htmlFor="direccion" className="form-label">Dirección</label>
+          <input
+            type="text"
+            className="form-control"
+            id="direccion"
+            value={formData.direccion}
+            onChange={handleChange}
+          />
         </div>
         <div className="mb-3">
-          <label htmlFor="Altura" className="form-label">Altura</label>
-          <input type="text" className="form-control" id="altura"/>
+          <label htmlFor="altura" className="form-label">Altura</label>
+          <input
+            type="text"
+            className="form-control"
+            id="altura"
+            value={formData.altura}
+            onChange={handleChange}
+          />
         </div>
         <div className="mb-3">
-          <label htmlFor="Nota" className="form-label">Comentario / Pedido *</label>
-          <textarea type="textarea" className="form-control" id="nota" rows={5} cols={50} required/>
-        </div>
-        <div className="mb-3 form-check">
-          <input type="checkbox" className="form-check-input" id="nov&ofertas"/>
-          <label className="form-check-label" htmlFor="nov&ofertas">¿Desea recibir novedades y ofertas?</label>
+          <label htmlFor="nota" className="form-label">Comentario / Pedido *</label>
+          <textarea
+            className="form-control"
+            id="nota"
+            rows={5}
+            required
+            value={formData.nota}
+            onChange={handleChange}
+          />
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>

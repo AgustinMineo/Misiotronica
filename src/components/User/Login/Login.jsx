@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import {validateUsuario, validatePassword } from './validations';
+import {validateUsuario, validatePassword, loginUsuario } from './validations';
 import ReCAPTCHA from "react-google-recaptcha";
 function Login() {
   const [userError, setUserError] = useState(false);
@@ -9,6 +9,7 @@ function Login() {
   const [captcha, setCaptcha] = useState('');
   const [captchaError, setCaptchaError] = useState(false);
 
+    
   const handleLogin = (e) => {
     e.preventDefault();
     setUserError(false);
@@ -33,12 +34,14 @@ function Login() {
       setCaptchaError(false);
     }
     if(captcha && passwordValidationResult &&userValidationResult ){
-      console.log('Log correcto.');
+      
+    loginUsuario(usuario, password);
     }
   }
   const handleCaptchaChange = (value) => {
     setCaptcha(value);
   }
+  
   return (
     <div className='container mx-5 my-5'>
       <div className="row justify-content-md-center ">
