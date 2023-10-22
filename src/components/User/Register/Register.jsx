@@ -111,38 +111,46 @@ function Register() {
         )}
       </div>
         <div class="mb-3 col-md-6">
-          <label htmlFor="formFile" class="form-label">Imagen</label>
-          <input class="form-control" type="file" id="formFile"/>
-        </div>
-        <div class="col-md-12">
-          <label for="inputState" class="form-label">Pais</label>
-          <select id="inputState" class="form-select">
-            <option selected>Seleccione</option>
-            <option>Argentina</option>
-          </select>
+          <label htmlFor="formImg" class="form-label">Imagen</label>
+          <input class="form-control" type="text" id="formImg"/>
         </div>
         <div class="col-md-6">
-          <label for="inputCity" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity"/>
+          <div class="mb-3 col-md-6">
+            <label htmlFor="formCUIT" class="form-label">CUIT</label>
+            <input class="form-control" type="text" id="formCUIT"/>
+          </div>
         </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
-            <option selected>Seleccione</option>
-            <option>...</option>
-          </select>
+        <div class="mb-3 col-md-6">
+          <label htmlFor="formName" class="form-label">Nombre</label>
+          <input class="form-control" type="text" id="formName"/>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label htmlFor="formLastname" class="form-label">Apellido</label>
+          <input class="form-control" type="text" id="formLastname"/>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label htmlFor="formPhone" class="form-label">Telefono</label>
+          <input class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="formPhone" />
+        </div>
+        <div class="col-md-12">
+          <label for="inputAdress" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="inputAdress"/>
+        </div>
+        <div class="col-md-6">
+          <label for="inputBlock" class="form-label">Altura</label>
+          <input type="text" class="form-control" id="inputBlock"/>
         </div>
         <div class="col-md-2">
-          <label for="inputZip" class="form-label">Codigo Postal</label>
-          <input type="text" class="form-control" id="inputZip"/>
+          <label for="inputStreet" class="form-label">Callé</label>
+          <input type="text" class="form-control" id="inputStreet"/>
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle principal"/>
+          <label for="inputBetween" class="form-label">Entre</label>
+          <input type="text" class="form-control" id="inputBetween" placeholder="1234 calle principal"/>
         </div>
         <div class="col-12">
-          <label for="inputAddress2" class="form-label">Detalles</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estudio, piso, etc"/>
+          <label for="inputDescription" class="form-label">Detalles</label>
+          <input type="text" class="form-control" id="inputDescription" placeholder="Nota"/>
         </div>
         <div className="mb-3" id='recaptcha'>
           <ReCAPTCHA

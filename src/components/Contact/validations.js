@@ -16,14 +16,11 @@ export async function consultaForm (data) {
       },
       body: JSON.stringify(formData),
     });
-    console.log(formData)
-    console.log(response.message)
-    if (response.ok) {
-      console.log('Registro exitoso');
-    } else {
-      console.log('Error al enviar los datos');
-    }
+    
+    return response.status
+   
   } catch (error) {
     console.log('Error al enviar los datos', error);
   }
 };
+
