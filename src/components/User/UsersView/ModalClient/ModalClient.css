@@ -1,0 +1,251 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zIndex{
+    z-index: 5;
+}
+.text-container {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.modal-footer button {
+    margin-left: 10px;
+}
+
+.product-modal__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .product-modal__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .product-modal__image:hover {
+    transform: scale(1.1);
+  }
+  .product-modal__images {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.filters{
+    width: 82%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
+
+
+@media (max-width: 576px) {
+
+    .modal-content {
+        width: 100%;
+    }
+    .filters{
+        padding: 0;
+        margin: 0;
+        width: 100%!important;
+    }
+    .card-body-filters{
+        margin: 0 !important;
+        padding: 0!important;
+        width: 95%;
+    }
+    .card-body-filters > div > button{
+        width: 50%!important;
+        margin: 10px ;
+    }
+    .error{
+        display: flex;
+        flex-wrap: wrap ;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .order{
+        width: 95% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text-container>p {
+        margin: 0px !important;
+        height: 80px;
+    }
+    .product-modal__images {
+        width: auto;
+        height: 150px;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .details {
+        font-size: 15px;
+    }
+    
+    .product-modal__main-image >img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+        height: auto;
+    }
+    .product-modal__main-image{
+        height: 30%;
+
+    }
+    .product-modal__images {
+        width: auto;
+        height: 150px;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .filters{
+        width: 93%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+    .product-modal__main-image >img{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .modal-content {
+        width: 70%;
+    }
+    .product-modal__images {
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .text-container{
+        height: 170px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .filters{
+        width: 86%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+    .product-modal__main-image >img{
+        height: 180px;
+        width: 180px;
+    }
+
+    
+}
+
+
+@media (max-width: 1200px) {
+    .modal-content {
+        width: 60%;
+    }
+    .product-modal__image {
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .filters{
+        width: 85%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+
+}

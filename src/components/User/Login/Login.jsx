@@ -1,16 +1,20 @@
 import { React, useState } from 'react';
 import {validateUsuario, validatePassword, loginUsuario } from './validations';
 import ReCAPTCHA from "react-google-recaptcha";
+import { useDispatch } from 'react-redux';
+
+import { useNavigate } from 'react-router-dom'; // Se utiliza para setear una ruta al realizar el login correcto
 function Login() {
+  const dispatch = useDispatch();
   const [userError, setUserError] = useState(false);
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState(false);
   const [captcha, setCaptcha] = useState('');
   const [captchaError, setCaptchaError] = useState(false);
-
+  const navigate = useNavigate();
+  const handleLogin = async (e) => {
     
-  const handleLogin = (e) => {
     e.preventDefault();
     setUserError(false);
     setPasswordError(false);
@@ -28,14 +32,17 @@ function Login() {
 
     if (!captcha) {
       setCaptchaError(true);
-      console.log(captchaError);
       return;
     }else{
       setCaptchaError(false);
     }
     if(captcha && passwordValidationResult &&userValidationResult ){
       
-    loginUsuario(usuario, password);
+    const status = await loginUsuario(usuario, password,dispatch);
+      
+    if(status.success){
+      navigate('/')
+    }
     }
   }
   const handleCaptchaChange = (value) => {

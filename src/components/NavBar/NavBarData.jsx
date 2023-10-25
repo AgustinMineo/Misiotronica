@@ -1,6 +1,7 @@
 import { IoPerson,IoHomeSharp } from "react-icons/io5";
 import { MdGroup } from 'react-icons/md';
 import { FaShoppingCart } from 'react-icons/fa';
+import { BsFillPeopleFill,BsFillPatchQuestionFill } from "react-icons/bs";
 
 const routes = [
     {
@@ -21,8 +22,20 @@ const routes = [
     {
       to:'/products',
       text:'Ventas',
-      icon:<FaShoppingCart/>
+      icon:<FaShoppingCart/>,
     },
+    {
+      to:'/clients',
+      text:'Listado de clientes',
+      icon:<BsFillPeopleFill/>,
+      rol:1
+    },
+    {
+      to:'/questions',
+      text:'Listado de consultas',
+      icon:<BsFillPatchQuestionFill/>,
+      rol:1
+    }
   ];
 
   /*

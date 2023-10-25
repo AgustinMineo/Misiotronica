@@ -2,6 +2,13 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductModal.css';
 import { MdAddShoppingCart } from "react-icons/md";
+
+/*Agregar que cuando el rol sea distinto a null se pueda agregar un producto al carrito, 
+sino que el boton de añadir al carrito no aparezca.
+Si tiene rol y no tiene stock tiene que aparecer deshabilitado.
+Tambien agregar un validador de stock cuando se agrega al carrito. 
+Que desde el front tome el stock actual y reste 1 por cada clic. Si el valor es 0, se desactiva el boton.
+*/
 import Swal from 'sweetalert2';
 function ProductModal({ productImg,extraImages, name, stock, price, description, onClose }) {
   const [currentImage, setCurrentImage] = React.useState(productImg);
